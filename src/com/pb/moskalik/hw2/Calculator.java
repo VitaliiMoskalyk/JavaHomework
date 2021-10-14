@@ -27,25 +27,25 @@ public class Calculator {
         switch (sign){
             case "+":
                 answer=operand1+operand2;
-                System.out.println("The answer of "+operand1 + sign + operand2 +" is " + answer);
+                System.out.println(name+", the answer of "+operand1 + sign + operand2 +" is " + answer);
             break;
 
             case "-":
                 answer=operand1-operand2;
-                System.out.println("The answer of "+operand1 + sign + operand2 +" is " + answer);
+                System.out.println(name+", the answer of "+operand1 + sign + operand2 +" is " + answer);
                 break;
 
             case "*":
                 answer=operand1*operand2;
-                System.out.println("The answer of "+operand1 + sign + operand2 +" is " + answer);
+                System.out.println(name+", the answer of "+operand1 + sign + operand2 +" is " + answer);
                 break;
 
             case "/":
                 if (operand2!=0){
                 answer=operand1/operand2;
-                System.out.println("The answer of "+operand1 + sign + operand2 +" is " + answer);}
+                System.out.println(name+", the answer of "+operand1 + sign + operand2 +" is " + answer);}
                 else{
-                System.out.println("OOOPS ! "+operand1+ "/"+ operand2+" is underfined !");}
+                System.out.println("OOOPS ! "+operand1+ "/"+ operand2+" is undefined !");}
                 break;
             default:
                 System.out.println("You may write only +, -, *, / symbols");
