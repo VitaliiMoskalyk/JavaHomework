@@ -12,7 +12,7 @@ public class Calculator {
 
         System.out.println(name +", " + "this is the Calculator ! Let`s start !");
         System.out.println("now please write FIRST number");
-        int operand1=scan.nextInt();
+        double operand1=scan.nextInt();
 
         System.out.println("OK, your number is "+operand1 + ". Write please a SYMBOL - what you want do with FIRST number?");
         String symbol;
@@ -20,9 +20,9 @@ public class Calculator {
 
 
         System.out.println("now please write SECOND number");
-        int operand2=scan.nextInt();
+        double operand2=scan.nextInt();
 
-        int answer;
+        double answer;
 
         switch (sign){
             case "+":
@@ -44,7 +44,8 @@ public class Calculator {
                 if (operand2!=0){
                 answer=operand1/operand2;
                 System.out.println("The answer of "+operand1 + sign + operand2 +" is " + answer);}
-                System.out.println("OOOPS ! "+operand1+ "/"+ operand2+" is underfined !");
+                else{
+                System.out.println("OOOPS ! "+operand1+ "/"+ operand2+" is underfined !");}
                 break;
             default:
                 System.out.println("You may write only +, -, *, / symbols");
