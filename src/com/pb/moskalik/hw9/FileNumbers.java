@@ -43,6 +43,7 @@ public class FileNumbers {
                         System.out.println(num + " ");
                     writer2.write(num + " ");
                 }
+
                 scanner.close();
                 writer2.println();
             }
